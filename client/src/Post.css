@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Post Component Styles */
+  .post {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .post .image {
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .post .image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .post .image img:hover {
+    transform: scale(1.05);
+  }
+  
+  .post .texts {
+    padding: 20px;
+  }
+  
+  .post .texts a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .post .texts h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .post .texts h2:hover {
+    color: #007BFF;
+  }
+  
+  .post .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .post .info .author {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #007BFF;
+    transition: color 0.3s ease;
+  }
+  
+  .post .info .author:hover {
+    color: #0056b3;
+  }
+  
+  .post .info time {
+    color: #999;
+  }
+  
+  .post .summary {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
